@@ -1,0 +1,15 @@
+{
+  "name": "ilovemycityejs",
+  "version": "1.0.0",
+  "description": "This is a responsive web application developed using nodeJS. Where a user can see all city information",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "suresh.avlm@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.3"
+  }
+}
