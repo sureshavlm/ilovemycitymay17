@@ -5,6 +5,8 @@ var express = require('express'); //MVC framework
 		C = Routes - defining routes
 	*/
 
+var routes = require('./routes/route');
+
 var app = express();
 
 app.set('view engine', 'ejs');
@@ -12,10 +14,10 @@ app.set('view engine', 'ejs');
 app.use(express.static(__dirname+'/public')); //middleware
 
 /* http://localhost:3000 */
-app.get('/', function(req, res) {
-	//res.sendFile(__dirname+ '/view/home.ejs');
-	res.render('home', {headline: 'I Love my City'});
-});
+app.get('/', routes.home);
+
+/** http://localhost:8080/paris **/
+app.get('/:city', routes.city);
 
 var port = process.env.PORT || 8080;
 

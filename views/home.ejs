@@ -1,13 +1,18 @@
 <html>
 	<head>
-		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<% include partials/head.ejs %>
 	</head>
 
 	<body>
-
-		<h1 align="center" class="alert alert-success"> <%= headline %> </h1>	
-
-		<script src="js/jquery-3.2.1.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
+		<% include partials/menu.ejs %>
+		<div class="container">
+			<% include partials/headline.ejs %>
+			<div class="row">
+				<div class="col-md-12">
+					<img src="/images/berlin/berlin-1.jpg">
+				</div>
+			</div>
+		</div>
+		<% include partials/jsIncludes.ejs %>
 	</body>
 </html>
